@@ -14,7 +14,6 @@ jobs:
           python-version: 3.9
       - uses: actions/cache@v2
         with:
-          key: ${{ github.ref }}
-          path: .cache
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
