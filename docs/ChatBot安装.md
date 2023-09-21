@@ -11,6 +11,13 @@
 
 将chatdoc项目文件拷贝到AirBox的/data下。
 
+### 项目结构树
+```
+|-- chatbot
+    |-- chat.py           -- Python调用cpp推理接口脚本
+    |-- web_demo.py       -- 页面交互脚本
+    |-- requirements.txt  -- 项目依赖
+```
 ## 依赖安装
 在AirBox终端进入到/data/chatbot/目录下。执行
 
