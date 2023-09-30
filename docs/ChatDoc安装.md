@@ -50,3 +50,8 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
 
 - 进入项目目录`cd /data/chatdoc `
 - 启动项目`bash run.sh`
+
+
+
+
+更多项目细节参考[GitHub仓库](https://github.com/zhengorange/chatdoc)
