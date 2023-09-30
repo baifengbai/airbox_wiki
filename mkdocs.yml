@@ -1,2 +1,13 @@
-site_name: My Docs
+site_name: AirBox操作手册
 theme: material
+
+nav:
+  - 开始: index.md
+  - 准备: 准备.md
+  - AirBox连接方式: AirBox连接方式.md 
+  - ChatBot安装: ChatBot安装.md
+  - ChatBot操作说明: ChatBot操作说明.md
+  - ChatDoc安装: ChatDoc安装.md
+  - ChatDoc操作说明: ChatDoc操作说明.md
+  - ChatDoc API使用说明: ChatDoc API使用说明.md
+  - 模型调用详情: 模型调用详情.md
