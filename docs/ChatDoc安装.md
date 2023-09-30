@@ -45,3 +45,8 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
 安装项目所需要的依赖。
 
 有些网络条件下，nltk语料将下载失败，解决办法是将我们提供的nltk_data文件夹拷贝到AirBox用户跟目录，即`cp -r ~/airbox-app/nltk_data ~/`。
+
+## 项目启动
+
+- 进入项目目录`cd /data/chatdoc `
+- 启动项目`bash run.sh`

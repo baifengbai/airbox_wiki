@@ -45,3 +45,8 @@ config.ini需要配置正确的模型文件，默认是选择int8-2048的模型�
 `pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
 安装项目所需要的依赖。
+
+## 项目启动
+
+- 进入项目目录`cd /data/chatbot `
+- 启动项目`python3 web_demo.py`
