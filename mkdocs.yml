@@ -5,9 +5,17 @@ nav:
   - 开始: index.md
   - 准备: 准备.md
   - AirBox连接方式: AirBox连接方式.md 
-  - ChatBot安装: ChatBot安装.md
-  - ChatBot操作说明: ChatBot操作说明.md
-  - ChatDoc安装: ChatDoc安装.md
-  - ChatDoc操作说明: ChatDoc操作说明.md
-  - ChatDoc API使用说明: ChatDoc API使用说明.md
-  - 模型调用详情: 模型调用详情.md
+
+  - 大模型应用:
+    - ChatBot安装: 大模型应用/ChatBot安装.md
+    - ChatBot操作说明: 大模型应用/ChatBot操作说明.md
+    - ChatDoc安装: 大模型应用/ChatDoc安装.md
+    - ChatDoc操作说明: 大模型应用/ChatDoc操作说明.md
+    - ChatDoc API使用说明: 大模型应用/ChatDoc API使用说明.md
+    - 模型调用详情: 大模型应用/模型调用详情.md
+
+  - AI绘画应用:
+    - SD v15安装启动: AI绘画应用/SD v15安装启动.md
+
+  - 智能语音应用:
+    - whisper: 智能语音应用/whisper.md

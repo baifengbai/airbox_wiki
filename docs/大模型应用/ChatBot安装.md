@@ -1,7 +1,7 @@
 这部分将介绍如何启动一个ChatBot程序。
 ## 文件下载
 
-![Alt text](<./imgs/1696061589146.jpg>)
+![Alt text](<../imgs/1696061589146.jpg>)
 
 扫描上面这个二维码下载，或者点击[百度网盘下载地址。](https://pan.baidu.com/s/1N6HZy9oq4ZnyRyz9MaDU6Q?pwd=1684)可根据使用的文件，按需下载。
 
