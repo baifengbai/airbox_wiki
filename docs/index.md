@@ -1,17 +1,3 @@
-# Welcome to MkDocs
+# Welcome to AirBox
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+这是AirBox的操作手册。本手册介绍了如何刷机、连接AirBox，以及如何安装使用ChatDoc和ChatBot应用。
