@@ -1,6 +1,10 @@
 除了通过WEB的方法交互，我们还提供了简单的API交互方式。API服务启动时将自动加载持久化的第一个知识库，并对外提供两个接口，可实现简单的ChatDoc和ChatBot。
 
-## ChatDoc
+## 启动方法
+`bash api.sh`
+
+
+### ChatDoc
 
 - 接口名称：`/chatdoc`
 - 请求参数
@@ -19,7 +23,7 @@
 - 调用示例
 ![Alt text](<../imgs/截屏2023-09-20 16.17.08.png>)
 
-## ChatBot
+### ChatBot
 
 - 接口名称：`/chatbot`
 - 请求参数
