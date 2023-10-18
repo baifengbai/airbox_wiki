@@ -53,10 +53,21 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
 
 有些网络条件下，nltk语料将下载失败，解决办法是将我们提供的nltk_data文件夹拷贝到AirBox用户跟目录，即`cp -r ~/airbox-app/nltk_data ~/`。
 
+embedding分为cpu版本和tpu版本，任选其一即可。
+
+- TPU版本
+百度网盘链接: https://pan.baidu.com/s/18wARtq7JdnzphUt9M9HScw?pwd=t2f3
+下载完成将下载的embedding_tpu文件夹替换chatdoc目录下的embedding_tpu。
+
+- CPU版本
+百度网盘链接: https://pan.baidu.com/s/1yFrk0Jtmbfr-nHnWvXF6AA?pwd=x5rw
+下载完成将下载的embedding文件夹替换chatdoc目录下的embedding。
+
+
 ## 项目启动
 
 - 进入项目目录`cd /data/chatdoc `
-- 启动项目`bash run.sh`
+- 启动项目`bash run.sh` 或 `bash run_emb_tpu.sh`
 
 
 

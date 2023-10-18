@@ -729,18 +729,33 @@
     |-- static            -- README中图片文件
 </code></pre>
 <h3 id="chatdoc">chatdoc项目文件</h3>
-<p><code>cd /data/</code>
-<code>git clone https://github.com/zhengorange/chatdoc.git</code></p>
+<ul>
+<li><code>cd /data/</code></li>
+<li><code>git clone https://github.com/zhengorange/chatdoc.git</code></li>
+</ul>
 <h2 id="_4">依赖安装</h2>
 <p>在AirBox终端进入到/data/chatdoc/目录下。执行</p>
 <p><code>pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
 <p><code>pip3 install tpu_perf-1.2.24-py3-none-manylinux2014_aarch64</code></p>
 <p>安装项目所需要的依赖。</p>
 <p>有些网络条件下，nltk语料将下载失败，解决办法是将我们提供的nltk_data文件夹拷贝到AirBox用户跟目录，即<code>cp -r ~/airbox-app/nltk_data ~/</code>。</p>
+<p>embedding分为cpu版本和tpu版本，任选其一即可。</p>
+<ul>
+<li>
+<p>TPU版本
+百度网盘链接: https://pan.baidu.com/s/18wARtq7JdnzphUt9M9HScw?pwd=t2f3
+下载完成将下载的embedding_tpu文件夹替换chatdoc目录下的embedding_tpu。</p>
+</li>
+<li>
+<p>CPU版本
+百度网盘链接: https://pan.baidu.com/s/1yFrk0Jtmbfr-nHnWvXF6AA?pwd=x5rw
+下载完成将下载的embedding文件夹替换chatdoc目录下的embedding。</p>
+</li>
+</ul>
 <h2 id="_5">项目启动</h2>
 <ul>
 <li>进入项目目录<code>cd /data/chatdoc</code></li>
-<li>启动项目<code>bash run.sh</code></li>
+<li>启动项目<code>bash run.sh</code> 或 <code>bash run_emb_tpu.sh</code></li>
 </ul>
 <p>更多项目细节参考<a href="https://github.com/zhengorange/chatdoc">GitHub仓库</a></p>
 
