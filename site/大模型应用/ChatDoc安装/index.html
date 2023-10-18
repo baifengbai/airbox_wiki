@@ -708,7 +708,11 @@
 <p>执行<code>cp -r ~/airbox-app/chatglm应用/chatglm-int8-2048/ /data</code></p>
 <p>将chatglm-int8-2048目录拷贝到AirBox的/data下。chatglm-int8-2048目录包含三个文件一个<code>chatglm2-6b_2048_int8.bmodel</code>模型文件，一个是<code>libtpuchat.so</code>cpp编译的so文件，最后一个是<code>tokenizer.model</code>。</p>
 <h3 id="_3">项目结构树</h3>
-<pre><code>|-- chatdoc
+<pre><code>|-- chatglm-int8-2048     -- 模型文件
+    |-- chatglm2-6b_2048_int8.bmodel
+    |-- libtpuchat.so
+    |-- tokenizer.model
+|-- chatdoc
     |-- README.md         -- README
     |-- api.py            -- API服务脚本
     |-- chat.py           -- Python调用cpp推理接口脚本
@@ -718,17 +722,19 @@
     |-- run.sh            -- 启动脚本
     |-- web_demo_st.py    -- 页面交互脚本
     |-- data          
-    |   |-- db            -- 知识库持久化目录
-    |   |-- uploaded      -- 已上传文件目录
-    |-- embedding         -- 文本嵌入模型
+        |-- db            -- 知识库持久化目录
+        |-- uploaded      -- 已上传文件目录
+    |-- embedding_tpu     -- 文本嵌入模型TPU版本
+    |-- embedding         -- 文本嵌入模型CPU版本
     |-- static            -- README中图片文件
 </code></pre>
 <h3 id="chatdoc">chatdoc项目文件</h3>
-<p><code>cp -r ~/airbox-app/chatglm应用/chatdoc /data</code></p>
-<p>将chatdoc项目文件拷贝到AirBox的/data下。</p>
+<p><code>cd /data/</code>
+<code>git clone https://github.com/zhengorange/chatdoc.git</code></p>
 <h2 id="_4">依赖安装</h2>
 <p>在AirBox终端进入到/data/chatdoc/目录下。执行</p>
 <p><code>pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
+<p><code>pip3 install tpu_perf-1.2.24-py3-none-manylinux2014_aarch64</code></p>
 <p>安装项目所需要的依赖。</p>
 <p>有些网络条件下，nltk语料将下载失败，解决办法是将我们提供的nltk_data文件夹拷贝到AirBox用户跟目录，即<code>cp -r ~/airbox-app/nltk_data ~/</code>。</p>
 <h2 id="_5">项目启动</h2>

@@ -719,11 +719,13 @@
 <p>扫描上面这个二维码下载，或者点击<a href="https://pan.baidu.com/s/1N6HZy9oq4ZnyRyz9MaDU6Q?pwd=1684">百度网盘下载地址。</a>可根据使用的文件，按需下载。</p>
 <h3 id="_2">模型文件</h3>
 <p>网盘中共三种模型文件，分别是int8-2048，int8-1024，int4-512，位于<code>~/airbox-app/chatglm应用/</code>路径下。</p>
-<p>假设我们使用int8-2048模型(采用int8的量化技术，最大token长度为2048)，具体操作方法是<code>cp -r ~/airbox-app/chatglm应用/chatglm-int8-2048 /data/</code>，即拷贝chatglm-int8-2048目录到AirBox的/data下。</p>
+<p>假设我们使用int8-2048模型(采用int8的量化，最大token长度为2048)，具体操作方法是<code>cp -r ~/airbox-app/chatglm应用/chatglm-int8-2048 /data/</code>，即拷贝chatglm-int8-2048目录到AirBox的/data下。</p>
 <p>chatglm-int8-2048目录包含三个文件一个<code>chatglm2-6b_2048_int8.bmodel</code>模型文件，一个是<code>libtpuchat.so</code>cpp编译的so文件，最后一个是<code>tokenizer.model</code>。</p>
 <h3 id="chatdoc">chatdoc项目文件</h3>
-<p><code>cp -r ~/airbox-app/chatglm应用/chatbot /data</code></p>
-<p>将chatdoc项目文件拷贝到AirBox的/data下。</p>
+<ul>
+<li><code>cd /data/</code></li>
+<li><code>git clone https://github.com/zhengorange/chatbot.git</code></li>
+</ul>
 <h3 id="_3">项目结构树</h3>
 <pre><code>|-- chatbot
     |-- chat.py           -- Python调用cpp推理接口脚本

@@ -39,8 +39,8 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
 
 ### chatdoc项目文件
 
-`cd /data/`
-`git clone https://github.com/zhengorange/chatdoc.git`
+- `cd /data/`
+- `git clone https://github.com/zhengorange/chatdoc.git`
 
 ## 依赖安装
 在AirBox终端进入到/data/chatdoc/目录下。执行

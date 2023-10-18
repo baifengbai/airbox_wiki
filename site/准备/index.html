@@ -639,9 +639,10 @@
 <li>通电开机，即可自动刷机。可通过串口连接查看系统刷机状态,当出现如上图输出的日志时，则表示刷机完成，拔掉TF卡后重启即可。约10分钟可刷机完成。</li>
 </ul>
 <h2 id="_2">修改内存分布</h2>
-<p>系统默认的内存分配是系统内存1GB，TPU专用内存是15GB。AirBox默认两种内存分配策略，分别是系统内存1GB-TPU专用内存15GB和系统内存7GB-TPU专用内存9GB。系统默认是1GB系统内存-15GBTPU专用内存。以下步骤可修改内存分配。</p>
+<p>系统默认的内存分配是系统内存1GB，TPU专用内存是15GB。AirBox提供三种预设的内存分配方案，系统的运行内存分别为1GB、4GB、6GB。</p>
+<p>文件链接：https://pan.baidu.com/s/14asuFPzjpnhPOBExdO3XuA?pwd=c925</p>
 <ul>
-<li>将所需的内存分配策略对应的emmcboot.itb文件和multi.its文件暂放在用户目录下。</li>
+<li>下载所需的内存分配策略对应的emmcboot.itb文件和multi.its文件暂放在用户目录下。</li>
 <li><code>cd ~</code></li>
 <li><code>sudo cp multi.its /boot</code></li>
 <li><code>sudo cp emmcboot.its /boot</code></li>
