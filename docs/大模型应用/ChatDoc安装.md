@@ -16,6 +16,10 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
 
 ### 项目结构树
 ```
+|-- chatglm-int8-2048     -- 模型文件
+    |-- chatglm2-6b_2048_int8.bmodel
+    |-- libtpuchat.so
+    |-- tokenizer.model
 |-- chatdoc
     |-- README.md         -- README
     |-- api.py            -- API服务脚本
@@ -26,30 +30,44 @@ chatdoc仅推荐使用int8-2048模型。因此所需模型文件在位于`~/airb
     |-- run.sh            -- 启动脚本
     |-- web_demo_st.py    -- 页面交互脚本
     |-- data          
-    |   |-- db            -- 知识库持久化目录
-    |   |-- uploaded      -- 已上传文件目录
-    |-- embedding         -- 文本嵌入模型
+        |-- db            -- 知识库持久化目录
+        |-- uploaded      -- 已上传文件目录
+    |-- embedding_tpu     -- 文本嵌入模型TPU版本
+    |-- embedding         -- 文本嵌入模型CPU版本
     |-- static            -- README中图片文件
 ```
 
 ### chatdoc项目文件
-`cp -r ~/airbox-app/chatglm应用/chatdoc /data`
 
-将chatdoc项目文件拷贝到AirBox的/data下。
+- `cd /data/`
+- `git clone https://github.com/zhengorange/chatdoc.git`
 
 ## 依赖安装
 在AirBox终端进入到/data/chatdoc/目录下。执行
 
 `pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
+`pip3 install tpu_perf-1.2.24-py3-none-manylinux2014_aarch64`
+
 安装项目所需要的依赖。
 
 有些网络条件下，nltk语料将下载失败，解决办法是将我们提供的nltk_data文件夹拷贝到AirBox用户跟目录，即`cp -r ~/airbox-app/nltk_data ~/`。
 
+embedding分为cpu版本和tpu版本，任选其一即可。
+
+- TPU版本
+百度网盘链接: https://pan.baidu.com/s/18wARtq7JdnzphUt9M9HScw?pwd=t2f3
+下载完成将下载的embedding_tpu文件夹替换chatdoc目录下的embedding_tpu。
+
+- CPU版本
+百度网盘链接: https://pan.baidu.com/s/1yFrk0Jtmbfr-nHnWvXF6AA?pwd=x5rw
+下载完成将下载的embedding文件夹替换chatdoc目录下的embedding。
+
+
 ## 项目启动
 
 - 进入项目目录`cd /data/chatdoc `
-- 启动项目`bash run.sh`
+- 启动项目`bash run.sh` 或 `bash run_emb_tpu.sh`
 
 
 
